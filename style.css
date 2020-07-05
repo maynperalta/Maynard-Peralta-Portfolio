@@ -4,10 +4,6 @@ body::-webkit-scrollbar {
 }
 
 /* Hide scrollbar for IE and Edge */
-body {
-	-ms-overflow-style: none;
-}
-
 
 nav {
     border: 1px;
@@ -15,6 +11,7 @@ nav {
 }
 
 body {
+    -ms-overflow-style: none;
     background-color: rgb(199, 199, 199);
     position: relative;
     min-height: 100vh;
@@ -24,6 +21,11 @@ body {
 .container {
     background-color: whitesmoke;
     border: solid 1px;
+    padding: 20px;
+}
+
+.img-fluid {
+  padding-top: 15px;
 }
 
 .navbar-brand {
@@ -49,12 +51,27 @@ h4 {
     margin-top: 20px;
 }
 
-.img-fluid {
+.card {
+  margin: 20px;
+}
+.img {
     position: relative;
-    margin: 10px;
-    padding: 10px;
-    width: 300px;
-    float: left;
+    width: 100%;
+    height: auto;
+}
+
+h3 {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  padding: 10px;
+  width: 380px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  bottom: 30px; 
+  width: 100%;
+  float: left;
+  background-color: rgb(169, 169, 169, 0.9);
 }
 
 nav {
@@ -62,10 +79,11 @@ nav {
 }
 
 p{
-    padding: 20px;
+    padding: 10px;
 }
 
 footer {
+    z-index: 3;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -78,13 +96,7 @@ footer {
     border-top: solid 2px gray;
 }
 
-h3 {
-    color: white;
-    background-color: darkgrey;
-    padding: 10px;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-}
+
 
 .fa {
     padding: 20px;
