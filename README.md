@@ -1,89 +1,49 @@
-# Unit 02 CSS and Bootstrap Homework: Responsive Portfolio
+# Homework2
 
-Responsive design ensures that web applications render well on a variety of devices and window or screen sizes. As a developer, you will likely be asked to create a mobile-first application or add responsive design to an existing application. 
+## Introduction
 
+This homework assignment required us to create a reponsive portfolio website consisting of three pages - Home/About Me, Portfolio, and Contact. We were to use semantic HTML and Bootstrap CSS.
+Personally, I found this assignment to be quite challenging because of my limited, as well as novice, knowledge of coding overall. Nevertheless, I used every resource at my disposal and dedicated A LOT of personal time in order to complete this project to the best of my ability. Using the components available on the GetBootstrap.com website, I was able to add many features by simply copying the code from this website, and further style it with an additional CSS style sheet. 
 
-## Directions
+### Process
 
-First, you will use the Bootstrap CSS Framework to create a mobile responsive portfolio. How do you deliver this? Here are some guidelines:
+The process of the website started with blank HTML pages. We were given pictures to use as inspiration in order to help us get an idea of what to shoot for. We were to create the pages using Bootstrap and the grid system. So, in order to use the Bootstrap components, I included a link to the Bootstrap CSS cdn style sheet in the head of each page. I also had an additional CSS stylesheet in order to further style the html pages. The navbar on each page would also collapse when the screen size was reduced past a certain point, so it was important to include the Bootstrap scripts in order to get the navbar to function properly. The assignment also made the request to minimize the use of media queries. I'm pretty happy that I was able to get the reponsiveness I desired without having to add any additional media queries. 
 
-* Create the following files files: `index.html`, `portfolio.html` and `contact.html`.
+#### About Me/Index
 
-* Using Bootstrap, develop your portfolio site with the following items:
+ This page would be my "About Me" page with my headshot and a short biography. I felt it would be easier to just start with the index page because it would be the first page a user would see. The pictures we were to use as a guide showed a lot of empty real estate on the right side of the viewing area when viewed on a large screen. Personally, I'm not a big fan of wasted space, so I opted to use as much of the screen as possible while still having margins on the left and right sides of the screen when viewed on larger screens. I also had to be sure the page was responsive and would have no margins when viewed on a smaller screen, so I had to account for that as well. The finished product is as shown below in a large screen layout: 
 
-   * A navbar
+![](Screen%20Shot%202020-07-05%20at%2010.17.25%20PM.png)
 
-   * A responsive layout
+And here is that same page viewed on a much smaller screen:
 
-   * Responsive images
+![](Screen%20Shot%202020-07-05%20at%2010.17.43%20PM.png)
 
-* The Bootstrap portfolio should minimize the use of media queries.
+I had to ensure that all of my HTML code was correct and all of the links worked. I also had to make sure that all of the elements were responsive and nothing broke out of the container element when the screen size was changed. You're probably saying to yourself "Wow, there's no color on that page whatsoever." And you would be correct. I am colorblind, so I'm always running the risk of using colors that clash although they would look fine to me. Now, if I were to be designing a page for a client, I'd be using all of the colors and branding they'd provide. And if they didn't specify, I'd be sure to ask and get feedback throughout the entire project. I could have easily said this was some sort of artsy design, but it's best to be honest. 
 
-* Screenshots are provided as a reference in the `Assets/Images` folder. Your app does not need to be _exactly_ like the images. Use Bootstrap to create a similar, responsive layout.
+#### Portfolio
 
-### Hints
+For the next HTML document, I tackled the "Portfolio" page. I copied the HTML code from the index.html page in order to ensure everthing outside of the container remains uniform (which would include the navbar and footer). This page has bootstrap cards that include pictures and styled text. Ideally, these cards act as links to different areas of the website in order to showcase more of a well-rounded portfolio. As for now, these cards are disabled links. They are only assigned links in order to show off a hover effect when the mouse cursor is over the image. This page is also responsive with a large screen and smaller screen shown below. 
 
-* Use Bootstrap's grid system (containers, rows, and columns).
+![](Screen%20Shot%202020-07-05%20at%2010.17.58%20PM.png)
+</br>
+![](Screen%20Shot%202020-07-05%20at%2010.18.10%20PM.png)
 
-* On an `xs` screen, content should take up the entire screen. On `sm` and larger screens, you should have some margins on the left and right sides of the screen. Check out various sites on your mobile device vs. your computer to see examples of these differences.
+#### Contact
 
-* Use an HTML validation service to ensure that each page has valid HTML.
+The third html document is the "Contact" page. As with the portfolio page, I merely copied the code from the index document in order to keep the footer and navbar exactly the same. This page has a form which would normally be used to send a message and/or feedback. Alas, this form is not functional at the moment (I haven't learned how to create functional forms just yet. I'm hoping to learn that process soon enough). Below this form, there are icons that act as links to my personal social media pages. These icons are possible through Font Awesome. In order to obtain these icons, I had to include a link to the Font Awesome CSS cdn. As with the other two pages, this page is responsive with examples of two different screen sizes below.
 
-### Minimum Requirements
+![](Screen%20Shot%202020-07-05%20at%2010.18.24%20PM.png)
+</br>
+![](Screen%20Shot%202020-07-05%20at%2010.18.35%20PM.png)
 
-* Functional, deployed application
+#### HTML Validation
 
-* GitHub repository with README describing the project
+Lastly, I had to ensure each page had valid and correct HTML. I used the website Validator.W3.org in order to ensure I met this requirement. The results for each page are at the top of the screenshots below.
 
-* Navbar must be consistent on each page.
+![](Screen%20Shot%202020-07-05%20at%2011.01.24%20PM.png)
+![](Screen%20Shot%202020-07-05%20at%2011.02.27%20PM.png)
+![](Screen%20Shot%202020-07-05%20at%2011.03.23%20PM.png)
 
-* Navbar on each page must contain links to Home/About, Contact, and Portfolio pages.
+That is all as far as the process. More detailed notes can be found in the comments of the HTML and CSS documents of the assignment. 
 
-* All links must work.
-
-* Must use semantic html.
-
-* Each page must have valid and correct HTML. (use a validation service)
-
-* Must contain your personalized information. (bio, name, images, links to social media, etc.)
-
-* Must properly utilize Bootstrap components and grid system.
-
-
-### Bonus
-
-* Using Bootstrap, make a sticky footer and use sub-rows and sub-columns on your portfolio site (**Hint:** Check out the Bootstrap documentation).
-
-
-## Commit Early and Often
-
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
-
-* Your commit history is a signal to employers that you are actively working on projects and learning new skills.
-
-* Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
-
-Follow these guidelines for committing:
-
-* Make single-purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits.
-
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history.
-
-* Don't commit half-done work, for the sake of your collaborators (and your future self!).
-
-* Test your application before you commit to ensure functionality at every step in the development process.
-
-We would like you to have well over 200 commits by graduation, so commit early and often!
-
-
-## Submission on BCS
-
-You are required to submit the following:
-
-* The URLs of the deployed applications
-
-* The URLs of the GitHub repositories
-
-- - -
-
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

@@ -1,4 +1,4 @@
-/* Here is the additional CSS style sheet for all of the pages on this project. It was easier to just use one additional CSS style sheet for the entire project rather than making a separate style sheet for each individual page. The first item on this style sheet is a precautionary code in order to hide a potential scrollbar in order to prevent responsiveness and appearance issues. */
+/* Here is the additional CSS style sheet for all of the pages on this project. It was easier to just use one additional CSS style sheet for the entire project rather than making a separate style sheet for each individual page. The first item on this style sheet is a precautionary code to hide a potential scrollbar in order to prevent responsiveness and appearance issues. */
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
@@ -15,7 +15,7 @@ body {
   padding-bottom: 100px;
 }
 
- /* The next two items are additional CSS for the navbar components. Theres a margin on the bottom in order to give some space between the navbar and the container itself. Theres also some styling for the "brand" which in this case, is my name that appears on the left side of the navbar. */
+ /* The next two items are additional CSS for the navbar components. Theres a margin on the bottom in order to give some space between the navbar and the container itself. There is also some styling for the "brand" which, in this case, is my name that appears on the left side of the navbar. */
 
 nav {
     border: 1px;
@@ -37,7 +37,7 @@ nav {
     padding: 20px;
 }
 
-/* The h1 and h4 headers in the html use a 12-column wide column. The reason for this is due the fact that I wanted to have a line underneath the headers and the rest of the content for that section. Using no column and only a row resulted in the line only existing beneath the header text which gave it a hyperlink appearance, which I didn't like. */
+/* The h1 and h4 headers in the html use a 12-column wide column. The reason for this is due the fact that I wanted to have a line between the headers and the rest of the content for that section. Using no column and only a row resulted in the line only existing beneath the header text -giving it a hyperlink appearance- which I didn't like. */
 
 h1, h4 {
   border-bottom: solid 5px;
@@ -54,7 +54,7 @@ p{
   padding: 10px;
 }
 
-/* These next four items are for the cards on the portfolio page. Here I was able to give the cards some margin, and a brightness hover effect when the mouse cursor is over them. I also used relative positioning for the card images, and absolute positioning for the text in order to lay it across the image itself. The text is in an h3 tag with it's own styling as well as a z-index of 2 in order to ensure it is always visible on top of the image. */
+/* These next four items are for the cards on the portfolio page. Here I was able to give the cards some margin, and a brightness hover effect when the mouse cursor is over them. I also used relative positioning for the card images, and absolute positioning for the text in order to lay it across the image itself. The text is in an h3 tag with its own styling as well as a z-index of 2 in order to ensure it is always visible on top of the image. */
 
 .card {
   margin: 30px;
@@ -91,13 +91,13 @@ h3 {
   width: auto;
 }
 
-/* The h4 header has similar styling to the h1 header (as seen above) in order to also get the underline to span across the entire container area rather than just the text itself. The h4 CSS also has a margin-top property in order to give it some space between itself and the form data. */
+/* The h4 header has similar styling to the h1 header (as seen above) in order to also get the underline to span across the entire container area rather than just the text itself. The h4 CSS also has a margin-top property in order to give it some space between itself and the form data above it. */
 
 h4 {
   margin-top: 20px;
 }
 
-/* This CSS is for the FontAwesome icons in the contact page. The icons were made possible through using a cdn stylesheet. However, even cutting and pasting the code directly from the source as-is resulted in a distorted appearance and visual problems when the mouse cursor hovers over the icons. This was remedied by additional CSS such as an adjustment to the width, a text decoration of none (which eliminated an underline hover effect), and a color set to white (which ensured the icon color remained white. Otherwise, it would invert and change the appearance of the icon). Each individual icon also has it's own brand-specific background color. These icons link to my personal social media pages for the corresponding sites. They also open in a new tab in order to keep the user's place on this page. */
+/* This CSS is for the FontAwesome icons in the contact page. The icons were made possible through using a Font Awesome cdn CSS stylesheet. However, even cutting and pasting the code directly from the source as-is resulted in a distorted appearance and visual problems when the mouse cursor hovers over the icons. This was remedied by additional CSS such as an adjustment to the width, a text decoration of none (which eliminated an underline hover effect), and a color set to white (which ensured the icon color remained white. Otherwise, it would invert and change the appearance of the icon). Each individual icon also has it's own brand-specific background color. These icons link to my personal social media pages for the corresponding sites. They also open in a new tab in order to keep the user's place on this page. */
 
 .fa {
     padding: 20px;
