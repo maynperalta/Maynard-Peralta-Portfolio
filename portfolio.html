@@ -1,5 +1,10 @@
+<!-- Here is the beginning of the HTML code. This includes the language.-->
+
 <!DOCTYPE html>
 <html lang="en">
+ 
+<!--Here is the head of the HTML. This has what character set I used fot the code. I went with UTF-8 which is widely used and I've never had a problem with it. Also, here lies our viewport metadata which turns off shrink to fit in order to avoid problems with reponsiveness. This assignment requires us to use Bootstrap, so I've included the Bootstrap CDN link. I have also linked a second stylesheet for further CSS sylization of the code. The title of the webpage is also contained in the head. This is the title that will appear in the webpage tab of the browser. I've used semantic HTML for the head, metadata, links, and title.-->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -7,6 +12,9 @@
     <link rel="stylesheet" type="text/css" href="./style.css">
     <title>Portfolio</title>
 </head>
+
+<!--This is where the body of the HTML code begins. This is all of the data that will appear on the website itself. We'll start with the Navbar. I've used Semantic HTML to mark the body of the entire document, and to also designate what code is part of the navbar, and an unordered list with some list tags for the links themselves. Originally, I wanted to avoid all of the list tags in order to present less cluttered HTML code, but it led to multiple appearance and functionality complications. This navbar was taken from the components section of the Getbootstrap site. I modified it because originally, it was much lighter and all of the links were bunched up next to my name (or the name of the brand had this been for a company). Here we have my name on the left side of the navbar and links to the home/about page, portfolio, and contact pages on the right. When the viewport is shrunk, or this page is viewed on a mobile phone, the navbar collapses into a hamburger menu which will expand and display the links when clicked. The links will also highlight with a hover effect when the mouse cursor is over them with the active link being the brightest of the three. On this page, the "Portfolio" link is active. -->
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <span class="navbar-brand mb-0 h1">Maynard Peralta</span>
@@ -27,12 +35,18 @@
           </ul>
         </div>
       </nav>
+
+<!--After the navbar, is the container of the code. This is where I started using the bootstrap grid system on this page. The container is reponsive, so when the viewport is changed, the layout will be arranged to present in an aesthetically pleasing fashion. The container starts with a row and a full length column for the header. I used a full length column in order to make a style choice of an underline to extend the full width of the container. This was obtained by making a thick border at the bottom of the column.-->
+
       <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <h1>Portfolio</h1>
             </div>
         </div>
+
+<!--In this part of the conatiner, I made some mockup cards for potential items that may be placed into a portfolio. I had a couple of diffent options for accomplishing this. I could have went with straight columns and made it work. In fact, the earlier attempt I had at this resulted in a pretty stylish happy accident which unfortunately broke when the veiwport was at a specific size. After attempting to troubleshoot that issue, I decided that this would be a great place to put some Bootstrap cards here instead. I placed the cards in 6-column-wide columns, two to a row with the last row having only one 6-column-wide column. I also gave these cards a link property in order to show off a subtle hover effect so the user would know that the cards can be clicked and also a general idea of where their mouse cursor is. Alas, these are dead links because the cards are merely placeholders at the moment. In an attempt to create a layout similar to the assignment reference photos, I created 5 cards with a title that spans the width of the picture. The titles are in the "h3" semantic tags with styling and a z-index which ensures they stay on top of the pictures in the cards. Theres also relative/absolute positioning so the titles appear in the desired location. The background of the text has a slight opacity as a style choice. When viewed on a smaller screen, the cards stack on top of each other with ample margins and padding. The images in the section use the semantic HTML "img". I also orignially used "img-fluid" fo the image class, but this led to complications with the image on the index/About Me page. However, since the image is contained in the Bootstrap card, a Bootstrap-specific class for the image wasn't necessary.-->
+
         <div class="row">
           <div class="col-md-6">
             <div class="card">
@@ -80,9 +94,14 @@
           </div>
         </div>
        </div>
+
+ <!--At the bottom of the page is the footer, which is fixed to the bottom of the viewport through CSS. At the bottom of the body of the code are the script links for jQuery and Javascript. These scripts allow the navbar to function when in a collapsed state.-->
+
     <footer>&copy;2020 Maynard Peralta</footer>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
 </body>
 </html>
