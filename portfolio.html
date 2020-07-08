@@ -45,10 +45,10 @@
             </div>
         </div>
 
-<!--In this part of the conatiner, I made some mockup cards for potential items that may be placed into a portfolio. I had a couple of diffent options for accomplishing this. I could have went with straight columns and made it work. In fact, the earlier attempt I had at this resulted in a pretty stylish happy accident which unfortunately broke when the veiwport was at a specific size. After attempting to troubleshoot that issue, I decided that this would be a great place to put some Bootstrap cards here instead. I placed the cards in 6-column-wide columns, two to a row with the last row having only one 6-column-wide column. I also gave these cards a link property in order to show off a subtle hover effect so the user would know that the cards can be clicked and also a general idea of where their mouse cursor is. Alas, these are disabled links because the cards are merely example images at the moment. In an attempt to create a layout similar to the assignment reference photos, I created 5 cards with a title that spans the width of the picture. The titles are in the "h3" semantic tags with styling and a z-index of 2 which ensures they stay on top of the pictures in the cards. There are also relative/absolute positioning CSS so the titles appear in the desired location. The background of the text has a slight opacity as a style choice. When viewed on a smaller screen, the cards stack on top of each other with ample margins and padding. The images in the section use the semantic HTML "img". I also orignially used "img-fluid" fo the image class, but this led to complications with the image on the index/About Me page. However, since the image is contained in the Bootstrap card, a Bootstrap-specific class for the image wasn't necessary.-->
+<!--In this part of the conatiner, I made some mockup cards for potential items that may be placed into a portfolio. I had a couple of diffent options for accomplishing this. I could have went with straight columns and made it work. In fact, the earlier attempt I had at this resulted in a pretty stylish happy accident which unfortunately broke when the veiwport was at a specific size. After attempting to troubleshoot that issue, I decided that this would be a great place to put some Bootstrap cards here instead. I placed the cards in 4-column-wide columns, with one row having three items and a second row containing two items. I also gave these cards a link property in order to show off a subtle hover effect so the user would know that the cards can be clicked and also a general idea of where their mouse cursor is. Alas, these are disabled links because the cards are merely example images at the moment. In an attempt to create a layout similar to the assignment reference photos, I created 5 cards with a title that spans the width of the picture. The titles are in the "h3" semantic tags with styling and a z-index of 2 which ensures they stay on top of the pictures in the cards. There are also relative/absolute positioning CSS so the titles appear in the desired location. The background of the text has a slight opacity as a style choice. When viewed on a smaller screen, the cards stack on top of each other with ample margins and padding. The images in the section use the semantic HTML "img". I also orignially used "img-fluid" fo the image class, but this led to complications with the image on the index/About Me page. However, since the image is contained in the Bootstrap card, a Bootstrap-specific class for the image wasn't necessary.-->
 
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-4">
             <div class="card">
               <a href="#">
               <img src="./assets/website.jpg" class="img" alt="website design">
@@ -56,17 +56,15 @@
               </a>
             </div>
           </div>
-          <div class="col-md-6">
-          <div class="card">
-            <a href="#">
-            <img src="assets/smartphones.jpg" class="img" alt="smartphones">
-            <h3>Mobile Applications</h3>
-            </a>
+          <div class="col-md-4">
+            <div class="card">
+              <a href="#">
+              <img src="assets/smartphones.jpg" class="img" alt="smartphones">
+              <h3>Mobile Applications</h3>
+              </a>
           </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-4">
             <div class="card">
               <a href="#">
               <img src="./assets/games.JPG" class="img" alt="game demo">
@@ -74,17 +72,17 @@
               </a>
             </div>
           </div>
-          <div class="col-md-6">
-          <div class="card">
-            <a href="#">
-            <img src="./assets/workspace.jpg" class="img" alt="workspace">
-            <h3>Workplace Productivity</h3>
-            </a>
-          </div>
-          </div>
-        </div>
+        </div> 
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-4">
+            <div class="card">
+              <a href="#">
+              <img src="./assets/workspace.jpg" class="img" alt="workspace">
+              <h3>Workplace Productivity</h3>
+              </a>
+          </div>
+          </div>
+          <div class="col-md-4">
             <div class="card">
               <a href="#">
               <img src="./assets/health.JPG" class="img" alt="health and wellness">

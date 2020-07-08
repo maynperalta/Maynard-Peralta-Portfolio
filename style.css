@@ -57,7 +57,7 @@ p{
 /* These next four items are for the cards on the portfolio page. Here I was able to give the cards some margin, and a brightness hover effect when the mouse cursor is over them. I also used relative positioning for the card images, and absolute positioning for the text in order to lay it across the image itself. The text is in an h3 tag with its own styling as well as a z-index of 2 in order to ensure it is always visible on top of the image. */
 
 .card {
-  margin: 30px;
+  margin: 20px;
 }
 
 a:hover {

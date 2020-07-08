@@ -13,11 +13,12 @@ The process of the website started with blank HTML pages. We were given pictures
 
  This page would be my "About Me" page with my headshot and a short biography. I felt it would be easier to just start with the index page because it would be the first page a user would see. The pictures we were to use as a guide showed a lot of empty real estate on the right side of the viewing area when viewed on a large screen. Personally, I'm not a big fan of wasted space, so I opted to use as much of the screen as possible while still having margins on the left and right sides of the screen when viewed on larger screens. I also had to be sure the page was responsive and would have no margins when viewed on a smaller screen, so I had to account for that as well. The finished product is as shown below in a large screen layout: 
 
-![](Screen%20Shot%202020-07-05%20at%2010.17.25%20PM.png)
-
+![](assets/about1.png)
+</br>
 And here is that same page viewed on a much smaller screen:
+</br>
+![](assets/about2.png)
 
-![](Screen%20Shot%202020-07-05%20at%2010.17.43%20PM.png)
 
 I had to ensure that all of my HTML code was correct and all of the links worked. I also had to make sure that all of the elements were responsive and nothing broke out of the container element when the screen size was changed. You're probably saying to yourself "Wow, there's no color on that page whatsoever." And you would be correct. I am colorblind, so I'm always running the risk of using colors that clash although they would look fine to me. Now, if I were to be designing a page for a client, I'd be using all of the colors and branding they'd provide. And if they didn't specify, I'd be sure to ask and get feedback throughout the entire project. I could have easily said this was some sort of artsy design, but it's best to be honest. 
 
@@ -25,25 +26,25 @@ I had to ensure that all of my HTML code was correct and all of the links worked
 
 For the next HTML document, I tackled the "Portfolio" page. I copied the HTML code from the index.html page in order to ensure everthing outside of the container remains uniform (which would include the navbar and footer). This page has bootstrap cards that include pictures and styled text. Ideally, these cards act as links to different areas of the website in order to showcase more of a well-rounded portfolio. As for now, these cards are disabled links. They are only assigned links in order to show off a hover effect when the mouse cursor is over the image. This page is also responsive with a large screen and smaller screen shown below. 
 
-![](Screen%20Shot%202020-07-05%20at%2010.17.58%20PM.png)
+![](assets/port1.png)
 </br>
-![](Screen%20Shot%202020-07-05%20at%2010.18.10%20PM.png)
+![](assets/port2.png)
 
 #### Contact
 
 The third html document is the "Contact" page. As with the portfolio page, I merely copied the code from the index document in order to keep the footer and navbar exactly the same. This page has a form which would normally be used to send a message and/or feedback. Alas, this form is not functional at the moment (I haven't learned how to create functional forms just yet. I'm hoping to learn that process soon enough). Below this form, there are icons that act as links to my personal social media pages. These icons are possible through Font Awesome. In order to obtain these icons, I had to include a link to the Font Awesome CSS cdn. As with the other two pages, this page is responsive with examples of two different screen sizes below.
 
-![](Screen%20Shot%202020-07-05%20at%2010.18.24%20PM.png)
+![](assets/contact1.png)
 </br>
-![](Screen%20Shot%202020-07-05%20at%2010.18.35%20PM.png)
+![](assets/contact2.png)
+
 
 #### HTML Validation
 
 Lastly, I had to ensure each page had valid and correct HTML. I used the website Validator.W3.org in order to ensure I met this requirement. The results for each page are at the top of the screenshots below.
-
-![](Screen%20Shot%202020-07-05%20at%2011.01.24%20PM.png)
-![](Screen%20Shot%202020-07-05%20at%2011.02.27%20PM.png)
-![](Screen%20Shot%202020-07-05%20at%2011.03.23%20PM.png)
+![](assets/validate1.png)
+![](assets/validate2.png)
+![](assets/validate3.png)
 
 That is all as far as the process. More detailed notes can be found in the comments of the HTML and CSS documents of the assignment. 
 
