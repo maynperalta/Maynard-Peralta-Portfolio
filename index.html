@@ -1,9 +1,7 @@
-<!-- Here is the beginning of the HTML code. This includes the language.-->
-
 <!DOCTYPE html>
 <html lang="en">
 
-<!--Here is the head of the HTML. This has what character set I used for the code. I went with UTF-8 which is widely used and I've never had a problem with it. Also, here lies our viewport metadata which turns off shrink to fit in order to avoid problems with reponsiveness. This assignment requires us to use Bootstrap, so I've included the Bootstrap CDN link. I have also linked a second stylesheet for further CSS sylization of the code. The title of the webpage is also contained in the head. This is the title that will appear in the webpage tab of the browser. I've used semantic HTML for the head, metadata, links, and title.-->
+<!--Head of document with stylesheet links-->
 
 <head>
     <meta charset="UTF-8">
@@ -13,7 +11,7 @@
     <title>About Me</title>
 </head>
 
-<!--This is where the body of the HTML code begins. This is all of the data that will appear on the website itself. We'll start with the Navbar. I've used Semantic HTML to mark the body of the entire document, and to also designate what code is part of the navbar, and an unordered list with some list tags for the links themselves. Originally, I wanted to avoid all of the list tags in order to present less cluttered HTML code, but it led to multiple appearance and functionality complications. This navbar was taken from the components section of the Getbootstrap.com site. I modified it because, originally, it was much lighter and all of the links were bunched up next to my name (or the name of the brand had this been for a company). Here we have my name on the left side of the navbar and links to the home/about page, portfolio, and contact pages on the right. When the viewport is shrunk, or this page is viewed on a mobile phone, the navbar collapses into a hamburger menu which will expand and display the links when clicked. The links will also highlight with a hover effect when the mouse cursor is over them with the active link being the brightest of the three. On this page, the "Home" link is active which would bring a view back to the index.html page. -->
+<!--Navbar to navigate to home (index.html) page, portfolio page, and contact page-->
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
@@ -36,15 +34,13 @@
         </div>
       </nav>
 
-<!--After the navbar, is the container of the code. This is where I started using the bootstrap grid system on this page. The container is reponsive, so when the viewport is changed, the layout will be arranged to present in an aesthetically pleasing fashion. The container starts with a row and a full length column for the header. I used a full length column in order to make a style choice of an underline to extend the full width of the container. This was obtained by making a thick border at the bottom of the h1 tag.-->
+<!--Bio information with picture, links to LinkedIn and GitHub, and resume link-->
 
     <div class="container">
       <div class="row">
             <div class="col-md-12">
                 <h1>About Maynard Peralta</h1>
             </div>
-
-<!--I used another row here to place my picture and bio information. I wanted a picture that would have the text wrap around it in a responsive fashion. I was able to accomplish this by using a 4-column sub-column nested into a full 12-column column. I also added text wrap and float-left classes to help obtain this appearance. Bootstrap classes have a lot of their own properties, so it took some tweaking to line everything up the way I wanted. The headshot image is held with the semantic img tag and given the class "img-fluid" which allows it to respond to the screen size of the viewport. For me, this was the trickiest part of the assignment.-->     
 
         <div class="row">
           <div class="col-md-12 text-wrap">
@@ -54,12 +50,10 @@
               <p>Hello, and welcome to my portfolio. My name is Maynard Peralta. I'm currently a coding student for the University of Denver's Full Stack Coding Boot Camp. While I'm not in classes, I'm employed by the BNSF Railway as a freight train mechanical inspector. I grew up in Pueblo, Colorado and have worked and resided in the greater Denver area for the past 20 years. The Coding Boot Camp has been extremely rewarding with helping me develop the skills needed for full stack web development. I have been able to confidently learn various programming languages such as HTML, CSS, JavaScript, jQuery, NodeJS, ReactJS, along with many others still to come. My past work experience has also helped me learn other skills such as customer service, inventory management, materials coordination, as well as various computer office applications (Microsoft Excel, Word, etc.). Please, take a moment to look at my portfolio page where you can see some of the various projects I have worked on with the skills I have learned from the University of Denver so far. If you have any questions, I can be reached by phone or email.
               <br>
               <br>
-
               <a href="mailto:maynperalta@gmail.com">maynperalta@gmail.com</a>
               <br>
               <a href="tel:720-281-4690">720.281.4690</a>
               </p> 
-            
           </div>
         </div>
         
@@ -77,7 +71,7 @@
       </div>
     </div>
 
-<!--At the bottom of the page is the footer, which is fixed to the bottom of the viewport through CSS. At the bottom of the body of the code are the script links for jQuery and Javascript. These scripts allow the navbar to function when in a collapsed state.-->
+<!--JavaScript and jQuery links-->
 
     <footer>&copy;2020 Maynard Peralta</footer>
 

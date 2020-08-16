@@ -1,11 +1,9 @@
-/* Here is the additional CSS style sheet for all of the pages on this project. It was easier to just use one additional CSS style sheet for the entire project rather than making a separate style sheet for each individual page. The first item on this style sheet is a precautionary code to hide a potential scrollbar in order to prevent responsiveness and appearance issues. */
-
 /* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
 	display: none;
 }
 
-/* This styling gives the body a background image. Originally, I just used one flat color, but I thought using an image would give it a little more style and appeal. There's also some CSS to prevent scrollbar interference with Microsoft brand browsers. */
+/* background image */
 
 body {
   -ms-overflow-style: none;
@@ -15,7 +13,7 @@ body {
   padding-bottom: 100px;
 }
 
- /* The next two items are additional CSS for the navbar components. Theres a margin on the bottom in order to give some space between the navbar and the container itself. There is also some styling for the "brand" which, in this case, is my name that appears on the left side of the navbar. */
+ /* Navbar stylings */
 
 nav {
     border: 1px;
@@ -32,22 +30,18 @@ nav {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-/* The CSS here is to style the appearance of the container. The container is where all of the content resides. I gave it a hint of translucence and a very thin border for style. There's also some padding to give some space between the edge of the container and the content. */
-
 .container {
     background-color: rgb(245, 245, 245, 0.9);
     border: solid 1px;
     padding: 20px;
 }
 
-/* The h1 and h4 headers in the html use a 12-column wide column. The reason for this is due the fact that I wanted to have a line between the headers and the rest of the content for that section. Using no column and only a row resulted in the line only existing beneath the header text -giving it a hyperlink appearance- which I didn't like. */
+/* Header underlines */
 
 h1, h2, h4 {
   border-bottom: solid 5px;
   padding: 10px;
 }
-
-/* The CSS for the next two items are here for a bit of fine-tuning to adjust the appreance of the headshot image and text on the index.html page. Without this bit of styling, the bootstrap CSS gives different properties and the two items don't line up properly at all. */
 
 .img-fluid {
   padding-top: 15px;
@@ -60,7 +54,7 @@ p{
 button {
   margin: 5px;
 }
-/* These next four items are for the cards on the portfolio page. Here I was able to give the cards some margin, and a brightness hover effect when the mouse cursor is over them. I also used relative positioning for the card images, and absolute positioning for the text in order to lay it across the image itself. The text is in an h3 tag with its own styling as well as a z-index of 2 in order to ensure it is always visible on top of the image. */
+/* Portfolio stylings */
 
 .card {
   margin: 20px;
@@ -89,7 +83,7 @@ h3 {
   background-color: rgb(182, 186, 243, 0.8);
 }
 
-/* The form CSS is to give the form contents padding and margins in order to give it a more pleasing appearance. There's also a width set to auto to ensure responsiveness of the form contents. */
+/* The form placeholder stylings */
 
 .form { 
   padding: 40px;
@@ -97,13 +91,11 @@ h3 {
   width: auto;
 }
 
-/* The h4 header has similar styling to the h1 header (as seen above) in order to also get the underline to span across the entire container area rather than just the text itself. The h4 CSS also has a margin-top property in order to give it some space between itself and the form data above it. */
-
 h4 {
   margin-top: 20px;
 }
 
-/* This CSS is for the FontAwesome icons in the contact page. The icons were made possible through using a Font Awesome cdn CSS stylesheet. However, even cutting and pasting the code directly from the source as-is resulted in a distorted appearance and visual problems when the mouse cursor hovers over the icons. This was remedied by additional CSS such as an adjustment to the width, a text decoration of none (which eliminated an underline hover effect), and a color set to white (which ensured the icon color remained white. Otherwise, it would invert and change the appearance of the icon). Each individual icon also has it's own brand-specific background color. These icons link to my personal social media pages for the corresponding sites. They also open in a new tab in order to keep the user's place on this page. */
+/* FontAwesome CSS */
 
 .fa {
     padding: 20px;
@@ -155,7 +147,7 @@ h4 {
     color: white;
   }
 
-  /* Finally, we have the footer which is uniform across all three pages. The footer has a fixed position so it stays at the bottom of the page with a position of fixed and bottom set to 0. It also spans across the width of the page with a width set to 100%. I also assigned it a z-index of 3 in order to keep it on top of the text on the cards which have a z-index of 2. The rest of the CSS is simply sizing and styling of the footer. */
+  /* Footer CSS */
 
 footer {
   z-index: 3;
