@@ -9,7 +9,7 @@ body::-webkit-scrollbar {
 
 body {
   -ms-overflow-style: none;
-  background-image: url(./assets/IMG_5712.JPG);
+  background-image: url(./assets/skyline.jpg);
   background-size: cover;
   min-height: 100vh;
   padding-bottom: 100px;
@@ -23,9 +23,12 @@ nav {
     margin-bottom: 10px;
 }
 
+.navbar-custom {
+  background-color: rgb(110, 110, 255);
+}
 .navbar-brand {
   padding: 8px;
-  background-color: darkslategrey;
+  background-color: rgb(110, 110, 255);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
@@ -39,7 +42,7 @@ nav {
 
 /* The h1 and h4 headers in the html use a 12-column wide column. The reason for this is due the fact that I wanted to have a line between the headers and the rest of the content for that section. Using no column and only a row resulted in the line only existing beneath the header text -giving it a hyperlink appearance- which I didn't like. */
 
-h1, h4 {
+h1, h2, h4 {
   border-bottom: solid 5px;
   padding: 10px;
 }
@@ -54,6 +57,9 @@ p{
   padding: 10px;
 }
 
+button {
+  margin: 5px;
+}
 /* These next four items are for the cards on the portfolio page. Here I was able to give the cards some margin, and a brightness hover effect when the mouse cursor is over them. I also used relative positioning for the card images, and absolute positioning for the text in order to lay it across the image itself. The text is in an h3 tag with its own styling as well as a z-index of 2 in order to ensure it is always visible on top of the image. */
 
 .card {
@@ -80,7 +86,7 @@ h3 {
   font-family: 'Times New Roman', Times, serif;
   bottom: 30px; 
   width: 100%;
-  background-color: rgb(169, 169, 169, 0.9);
+  background-color: rgb(182, 186, 243, 0.8);
 }
 
 /* The form CSS is to give the form contents padding and margins in order to give it a more pleasing appearance. There's also a width set to auto to ensure responsiveness of the form contents. */
@@ -157,10 +163,10 @@ footer {
   bottom: 0;
   width: 100%;
   height: 40px;
-  background-color: darkslategrey;
+  background-color: rgb(77, 77, 255);
   color: white;
   padding: 10px;
   text-align: center;
   font-size: 12px;
-  border-top: solid 2px gray;
+  border-top: solid 2px skyblue;
 }
