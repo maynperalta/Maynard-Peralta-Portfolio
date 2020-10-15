@@ -58,11 +58,15 @@ button {
 
 .card {
   margin: 20px;
+  transition: transform .3s;
+}
+
+.card:hover {
+  transform: scale(1.1);
 }
 
 a:hover {
   filter:brightness(110%);
-
 }
 
 .img {
@@ -81,6 +85,7 @@ h3 {
   bottom: 30px; 
   width: 100%;
   background-color: rgb(182, 186, 243, 0.8);
+  font-size: 18px;
 }
 
 /* The form placeholder stylings */
